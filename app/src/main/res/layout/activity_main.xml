@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="30dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:layout_marginBottom="20dp"
+         />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:stretchColumns="*">
+        <TableRow>
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Arrancar"
+                android:background="@android:color/holo_red_light"
+                />
+
+            <Button
+                android:id="@+id/Button02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="lanzarPrefencias"
+                android:text="@string/Configurar" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/Button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Acercade"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Salir"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
